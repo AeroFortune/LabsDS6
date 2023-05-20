@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingBottom="13dp">
+
+    <ImageView
+        android:layout_alignParentLeft="true"
+        android:id="@+id/imgIcono"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="5dp"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:src="@drawable/ic_launcher_background"/>
+
+    <RelativeLayout
+        android:layout_toRightOf="@id/imgIcono"
+        android:id="@+id/layoutChatInfo"
+        android:layout_width="250dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="5dp">
+
+        <TextView
+            android:id="@+id/txtNombre"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+
+            android:textSize="19dp"
+            android:text="Generic Dude"/>
+
+        <TextView
+            android:id="@+id/txtChat"
+            android:layout_marginRight="9dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txtNombre"
+            android:layout_marginTop="7dp"
+            android:textSize="15sp"
+            android:text="kinda fell asleep yesterday bruh"/>
+
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/txtHora"
+        android:layout_toRightOf="@id/layoutChatInfo"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="15dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="15sp"
+        android:textColor="#888888"
+        android:text="4:00 PM"/>
+
+    <TextView
+        android:id="@+id/txtChatCount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/layoutChatInfo"
+        android:layout_below="@id/txtHora"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="7dp"
+        android:textSize="19dp"
+        android:text="200"/>
+
+</RelativeLayout>

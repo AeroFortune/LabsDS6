@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/layoutTop"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        >
+
+        <ImageView
+            android:id="@+id/imgIcon"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/ic_launcher_background"></ImageView>
+
+        <TextView
+            android:id="@+id/txtUsername"
+            android:layout_toRightOf="@id/imgIcon"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="7dp"
+            android:layout_marginTop="7dp"
+            android:text="username"
+            android:textSize="19dp"
+            android:textStyle="bold"
+            />
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_toRightOf="@id/txtUsername"
+            android:src="@drawable/ic_burger_menu"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="30dp">
+
+        </ImageView>
+
+
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/imgPost"
+        android:layout_below="@id/layoutTop"
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:src="@drawable/alear"
+        android:scaleType="fitXY">
+    </ImageView>
+
+    <RelativeLayout
+        android:id="@+id/layoutBottom"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_below="@id/imgPost">
+
+        <RelativeLayout
+            android:id="@+id/layoutBottomIcons"
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+
+            <Button
+                android:id="@+id/btnLike"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:background="@drawable/ic_like"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="10dp">
+            </Button>
+
+            <Button
+                android:id="@+id/btnComment"
+                android:layout_toRightOf="@id/btnLike"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:background="@drawable/ic_comment"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="10dp">
+            </Button>
+
+            <Button
+                android:id="@+id/btnShare"
+                android:layout_toRightOf="@id/btnComment"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:background="@drawable/ic_share"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="10dp">
+            </Button>
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/txtLikeCounts"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/layoutBottomIcons"
+            android:layout_marginLeft="15dp"
+            android:textSize="19dp"
+            android:textStyle="bold"
+            android:text="X likes"
+            />
+
+        <TextView
+            android:id="@+id/txtDesc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txtLikeCounts"
+            android:textSize="15dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:text="(username) I just realized my new game, check it out! It's gonna be fun!"/>
+
+
+
+
+
+
+    </RelativeLayout>
+
+
+
+</RelativeLayout>
