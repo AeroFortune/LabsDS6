@@ -17,6 +17,8 @@ public class MainActivity extends AppCompatActivity {
     ListView lstChats;
     InstagramLVAdapter adapterChats;
 
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
